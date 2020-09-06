@@ -14,6 +14,9 @@ None
 
 ```sh
 ansible-galaxy install eagleusb.skeleton
+ansible-galaxy init --role-skeleton ~/.ansible/roles/eagleusb.skeleton ansible-therole
+...
+- Role ansible-therole was created successfully
 ```
 
 ## Variables
