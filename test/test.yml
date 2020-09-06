@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  roles:
+    - ../../ansible-skeleton
+  vars:
+    skeleton_baz:
+      one: ""
+      two: ""
+    skeleton_bar: 10
+    skeleton_bazbaz:
+      - Name: "tail"
+        Path: "/var/log/syslog"
+        Storage.type: "memory"
+        Mem_Buf_Limit: "20M"
+        Tag: "syslog"

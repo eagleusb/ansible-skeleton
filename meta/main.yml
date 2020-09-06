@@ -1,0 +1,22 @@
+---
+galaxy_info:
+  role_name: fluentbit
+  author: eagleusb
+  description: "Install Skeleton"
+  license: "license (GPL3)"
+  min_ansible_version: 2.8
+  platforms:
+    - name: EL
+      versions:
+        - 7
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+  galaxy_tags:
+    - logging
+    - monitoring
+
+dependencies: []
