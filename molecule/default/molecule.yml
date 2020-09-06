@@ -1,0 +1,26 @@
+---
+dependency:
+  name: "galaxy"
+driver:
+  name: "docker"
+# see: https://github.com/ansible-community/molecule/blob/master/molecule/model/schema_v3.py#L232
+platforms:
+  - name: "debian"
+    image: "geerlingguy/docker-debian10-ansible:latest"
+    pre_build_image: True
+    privileged: False
+    groups: ["all"]
+lint: |
+  set -e
+  yamllint --strict --format colored .
+  ansible-lint .
+provisioner:
+  name: "ansible"
+  log: True
+  playbooks:
+    create: create.yml
+    prepare: prepare.yml
+    converge: converge.yml
+    destroy: destroy.yml
+verifier:
+  name: ansible
