@@ -1,7 +1,7 @@
 ---
-- name: Converge
+- name: "molecule | converge"
   hosts: all
   tasks:
-    - name: "Include ansible-skeleton"
+    - name: "include ansible-skeleton"
       include_role:
         name: "ansible-skeleton"
