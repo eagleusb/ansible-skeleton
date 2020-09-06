@@ -2,7 +2,9 @@
 
 Ansible role skeleton for Ansible Galaxy init function
 
-[![Ansible Version](https://img.shields.io/badge/Ansible-v2.9+-green.svg)](https://github.com/eagleusb/ansible-skeleton)
+![ansible-version](https://img.shields.io/badge/ansible-v2.9+-green.svg)
+![last-commit](https://img.shields.io/github/last-commit/eagleusb/ansible-skeleton)
+![license](https://img.shields.io/github/license/eagleusb/ansible-skeleton)
 
 ## Requirements
 
@@ -32,4 +34,4 @@ ansible-galaxy install eagleusb.skeleton
 
 ## License
 
-GPL3
+[GNU GENERAL PUBLIC LICENSE Version 3](./LICENSE)
