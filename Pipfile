@@ -8,9 +8,11 @@ verify_ssl = true
 [packages]
 ansible = ">=2.9"
 yamllint = ">=1.24.2"
+ansible-lint = ">=4.3.4"
 
 [requires]
 python_version = "3"
 
 [scripts]
-lint = "yamllint --strict --format colored ."
+yamllint = "yamllint --strict --format colored ."
+ansiblelint = "ansible-lint ."
