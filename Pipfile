@@ -18,3 +18,4 @@ python_version = "3"
 [scripts]
 yamllint = "yamllint --strict --format colored ."
 ansiblelint = "ansible-lint ."
+test = "molecule test --destroy always --parallel"
