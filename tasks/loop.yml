@@ -5,6 +5,7 @@
     path: "{{ _directory }}"
     state: directory
     recurse: yes
+    mode: 0644
     owner: root
     group: root
   loop:
